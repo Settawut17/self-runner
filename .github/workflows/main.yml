@@ -52,6 +52,6 @@ jobs:
             type: LoadBalancer # allow access via other network 
           
           "@
-          $yamlContent | out-file-filePath deployment.yaml
+          $yamlContent | out-file -filePath deployment.yaml
           kubectl apply -f deployment.yaml
   
